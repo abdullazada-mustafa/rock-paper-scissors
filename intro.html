@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Paper, Rock and Scissors</title>
+</head>
+<body>
+    <div class="signup-login-page">
+        
+            <div class="signup">
+                <div class="create-account">
+                    <p class="create">Create account</p>
+                    <p class="have-account">Already have an account?</p>
+                    <a href="#" onclick="openLogin()">Sign in</a>
+                </div>
+                <div class="registration-data">
+                    <div class="form">
+                        <input type="text" placeholder="Username" class="username-email" required>
+                        <div class="name-surname">
+                            <input type="text" placeholder="First name" class="first-last-name" required>
+                            <input type="text" placeholder="Last name" class="first-last-name" required>
+                        </div>
+                        <input type="text" placeholder="E-mail" class="username-email" required>
+                        <button class="signup-button" onclick="openLogin()">Sign up</button>
+                        <div class="checkbox-div">
+                            <input type="checkbox" class="checkbox" required>
+                            <p>I have read and agree to the Terms of Service</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="login">
+                <div class="login-account">
+                    <p class="create">Login</p>
+                    <a href="#" onclick="openSignup()">Register</a>
+                </div>
+                <div class="registration-data">
+                    <form action="./index.html" class="form">
+                        <input type="text" placeholder="Username" class="username-email" id="loginUsername" required>
+                        <input type="password" placeholder="Password" class="username-email" id="password" required >
+                        <div class="show-password">
+                            <input type="checkbox" id="show-password" class="checkbox" onclick="showPassword()">
+                            <p>Show Password</p>
+                        </div>
+                        <button class="login-button" id="loginButton">Log in</button>
+                    </form>
+                </div>
+            </div>
+    
+    </div>
+
+
+
+    <div class="intro-body">
+        <div class="intro">
+            <h1 class="welcome">Welcome!</h1>
+            <button class="enter-button" onclick="enterBtn()">Enter</button>
+        </div>
+    </div>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./main.js"></script>
+</body>
+    
+</html>

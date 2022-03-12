@@ -1,0 +1,352 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* intro.html */
+
+.intro-body {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #000;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.welcome {
+  color: #fff;
+  font-size: 50px;
+  transform: translateY(-350px);
+  animation: top-to-bottom 1s ease-in forwards 1s;
+}
+
+@keyframes top-to-bottom {
+  0% {
+    transform: translateY(-400px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.enter-button {
+  font-size: 20px;
+  width: 70px;
+  height: 30px;
+  background: #adff2f;
+  transform: translateY(320px);
+  animation: welcome-to-bottom 1s ease-in forwards 1s;
+}
+
+@keyframes welcome-to-bottom {
+  0% {
+    transform: translateY(320px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.signup-login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #000;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: 1s ease-in;
+}
+
+.signup,
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 25%;
+  height: 55%;
+  border-radius: 1rem;
+  background: #fff;
+  backface-visibility: hidden;
+  position: absolute;
+}
+
+.create-account {
+  height: 35%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.create-account a {
+  font-family: "Quicksand", sans-serif;
+  font-size: 14px;
+}
+.have-account {
+  font-family: "Quicksand", sans-serif;
+  font-size: 14px;
+}
+.create {
+  font-weight: bold;
+  font-size: 28px;
+}
+.login-account {
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.registration-data {
+  height: 75%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  width: 90%;
+}
+
+.username-email {
+  width: 80%;
+  height: 15%;
+}
+.name-surname {
+  display: flex;
+  justify-content: space-evenly;
+  height: 15%;
+}
+.first-last-name {
+  display: flex;
+  width: 45%;
+}
+.registration-data input {
+  outline: none;
+  border-radius: 10px;
+  border: 1px solid #000;
+  font-style: italic;
+  padding: 0 0 0 10px;
+}
+
+.login-button,
+.signup-button {
+  width: 80%;
+  height: 15%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.checkbox-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.checkbox-div p {
+  padding: 0 0 0 4px;
+}
+
+.show-password {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
+}
+
+/* index.html */
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background: #292c4d;
+  position: relative;
+}
+
+.scores {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 90%;
+  height: 20%;
+  transform: translateX(20px);
+}
+.scores p {
+  color: #fff;
+  font-size: 24px;
+}
+.player,
+.computer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.reset {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+  height: 20%;
+  transition: 0.5s ease 0.5s;
+}
+.reset-button {
+  width: 50%;
+  height: 100%;
+  border-radius: 3px;
+  background: #adff2f;
+}
+.play,
+.choice {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.play {
+  width: 100%;
+  height: 60%;
+}
+.play p {
+  color: #fff;
+  font-size: 40px;
+  height: 30%;
+}
+.play button {
+  width: 7%;
+  height: 8%;
+  border-radius: 3px;
+  background: #adff2f;
+}
+.choice {
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  top: 30%;
+  display: flex;
+  justify-content: space-between;
+  transition: opacity 0.5s ease 0.5s;
+}
+
+#verdict {
+  color: #fff;
+  font-size: 34px;
+}
+
+.imgs {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.imgs img {
+  width: 200px;
+  height: 200px;
+}
+
+#myChoice {
+  transform: rotateY(180deg);
+}
+
+.options {
+  width: 70%;
+  height: 10%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.options button {
+  width: 10%;
+  border-radius: 3px;
+  background: #adff2f;
+}
+
+div.fadeOut {
+  opacity: 0;
+  pointer-events: none;
+}
+div.fadeIn {
+  opacity: 1;
+  pointer-events: all;
+}
+
+@keyframes shakePlayer {
+  0% {
+    transform: rotateY(180deg) translateY(0px);
+  }
+  15% {
+    transform: rotateY(180deg) translateY(-50px);
+  }
+  25% {
+    transform: rotateY(180deg) translateY(0px);
+  }
+  35% {
+    transform: rotateY(180deg) translateY(-50px);
+  }
+  50% {
+    transform: rotateY(180deg) translateY(0px);
+  }
+  65% {
+    transform: rotateY(180deg) translateY(-50px);
+  }
+  75% {
+    transform: rotateY(180deg) translateY(0px);
+  }
+  85% {
+    transform: rotateY(180deg) translateY(-50px);
+  }
+  100% {
+    transform: rotateY(180deg) translateY(0px);
+  }
+}
+
+@keyframes shakeComputer {
+  0% {
+    transform: translateY(0px);
+  }
+  15% {
+    transform: translateY(-50px);
+  }
+  25% {
+    transform: translateY(0px);
+  }
+  35% {
+    transform: translateY(-50px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  65% {
+    transform: translateY(-50px);
+  }
+  75% {
+    transform: translateY(0px);
+  }
+  85% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
