@@ -7,7 +7,7 @@ function enterBtn(){
 }
 
 
-var login = document.querySelector('.login')
+const login = document.querySelector('.login')
 
 function openLogin(){
     login.style.transform = "rotateY(0deg)"
@@ -19,7 +19,7 @@ function openSignup(){
 
 
 function showPassword(){
-    var x = document.getElementById('password')
+    const x = document.getElementById('password')
     if(x.type=="password"){
         x.type = "text"
     }
@@ -80,9 +80,9 @@ rock.onclick = makeYourChoice
 paper.onclick = makeYourChoice
 scissors.onclick = makeYourChoice
 
-var myChoice = document.getElementById('myChoice')
-var computerChoice = document.getElementById('computerChoice')
-var verdict = document.getElementById('verdict')
+let myChoice = document.getElementById('myChoice')
+let computerChoice = document.getElementById('computerChoice')
+let verdict = document.getElementById('verdict')
 myChoice.addEventListener('animationend', function(){
     this.style.animation = ""
 })
