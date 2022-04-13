@@ -4,15 +4,13 @@
   box-sizing: border-box;
 }
 
-/* intro.html */
-
 .intro-body {
   overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
   background: #000;
-  font-family: "Quicksand", sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-weight: bold;
   position: fixed;
   top: 0;
@@ -61,122 +59,6 @@
   }
 }
 
-.signup-login-page {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background: #000;
-  position: relative;
-  transform-style: preserve-3d;
-  transition: 1s ease-in;
-}
-
-.signup,
-.login {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  width: 25%;
-  height: 55%;
-  border-radius: 1rem;
-  background: #fff;
-  backface-visibility: hidden;
-  position: absolute;
-}
-
-.create-account {
-  height: 35%;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.create-account a {
-  font-family: "Quicksand", sans-serif;
-  font-size: 14px;
-}
-.have-account {
-  font-family: "Quicksand", sans-serif;
-  font-size: 14px;
-}
-.create {
-  font-weight: bold;
-  font-size: 28px;
-}
-.login-account {
-  height: 30%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-}
-.registration-data {
-  height: 75%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.form {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 100%;
-  width: 90%;
-}
-
-.username-email {
-  width: 80%;
-  height: 15%;
-}
-.name-surname {
-  display: flex;
-  justify-content: space-evenly;
-  height: 15%;
-}
-.first-last-name {
-  display: flex;
-  width: 45%;
-}
-.registration-data input {
-  outline: none;
-  border-radius: 10px;
-  border: 1px solid #000;
-  font-style: italic;
-  padding: 0 0 0 10px;
-}
-
-.login-button,
-.signup-button {
-  width: 80%;
-  height: 15%;
-  border-radius: 10px;
-  cursor: pointer;
-}
-
-.checkbox-div {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-.checkbox-div p {
-  padding: 0 0 0 4px;
-}
-
-.show-password {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 40%;
-}
-
-/* index.html */
 section {
   display: flex;
   flex-direction: column;
@@ -203,6 +85,7 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: 0.5s ease 0.5s;
 }
 .reset {
   display: flex;
@@ -248,7 +131,7 @@ section {
   top: 30%;
   display: flex;
   justify-content: space-between;
-  transition: opacity 0.5s ease 0.5s;
+  transition: 0.5s ease 0.5s;
 }
 
 #verdict {

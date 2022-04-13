@@ -1,23 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Paper, Rock and Scissors</title>
   </head>
   <body>
     <section>
+      <div class="intro-body">
+        <div class="intro">
+          <h1 class="welcome">Welcome!</h1>
+          <button class="enter-button" onclick="enterBtn()">Enter</button>
+        </div>
+      </div>
       <div class="scores">
-        <div class="player">
+        <div class="player fadeOut">
           <p id="playerName">Player</p>
           <p class="player-score">0</p>
         </div>
         <div class="reset fadeOut">
           <button class="reset-button">Reset</button>
         </div>
-        <div class="computer">
+        <div class="computer fadeOut">
           <p>Computer</p>
           <p class="computer-score">0</p>
         </div>
@@ -41,6 +47,13 @@
         </div>
       </div>
     </section>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
+      integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="./main.js"></script>
   </body>
 </html>
